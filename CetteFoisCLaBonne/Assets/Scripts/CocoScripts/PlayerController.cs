@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float maxHeight;
     public float minHeight;
+    public int health;
 
     private void Update()
     {

@@ -307,6 +307,7 @@ MonoBehaviour:
   speed: 50
   maxHeight: 2
   minHeight: -2
+  health: 3
 --- !u!50 &1206316846
 Rigidbody2D:
   serializedVersion: 4
