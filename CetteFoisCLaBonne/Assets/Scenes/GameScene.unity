@@ -152,7 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa22f12875d7ad0458e9cdbd7c6b7f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePatterns: []
+  obstaclePatterns:
+  - {fileID: 5852781814888981326, guid: 81ea262dec3382543a9e43c646287b6f, type: 3}
+  - {fileID: 519760145687160301, guid: 51c64eb788a3c73478af6d02d968f728, type: 3}
+  - {fileID: 6497390898369301638, guid: 87f1419ced92eed4fb79ea5af2565b97, type: 3}
   startTimeBtwSpawn: 1.25
   decreaseTime: 0.05
   minTime: 0.65
