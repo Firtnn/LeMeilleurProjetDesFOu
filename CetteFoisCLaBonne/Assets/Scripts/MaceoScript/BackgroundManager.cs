@@ -5,7 +5,6 @@ using UnityEngine;
 public class BackgroundManager : MonoBehaviour
 {
     [SerializeField] private GameObject background = default;
-    [SerializeField] private Transform player = default;
     [SerializeField] private float spawnX = 0.0f;
     [SerializeField] private float length = 40f;
     [SerializeField] private int amountOfTileOnScreen = 3;
@@ -34,7 +33,7 @@ public class BackgroundManager : MonoBehaviour
         {
             activeTiles[i].transform.position += velocity * Time.deltaTime;
         }
-        if (activeTiles[0].transform.position.x < player.position.x - length)
+        if (activeTiles[0].transform.position.x <  - length /* + ou - offset*/)
         {
             DeleteTile();
             SpawnTile(0);
