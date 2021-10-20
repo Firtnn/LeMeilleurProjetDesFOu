@@ -318,7 +318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 1694659864780154530, guid: cc2c045b78a314043ac5467b7338d0ad, type: 3}
-  player: {fileID: 0}
   spawnX: 0
   length: 40
   amountOfTileOnScreen: 3
