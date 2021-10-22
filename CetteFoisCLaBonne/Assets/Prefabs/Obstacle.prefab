@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 4
+  particleName: MeteorSpark
 --- !u!114 &1615857004373187122
 MonoBehaviour:
   m_ObjectHideFlags: 0

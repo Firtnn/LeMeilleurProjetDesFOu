@@ -6,6 +6,7 @@ public class Obstacle : MonoBehaviour
 {
     public int damage;
     public float speed;
+    public string particleName;
 
     private void Update()
     {
@@ -16,6 +17,7 @@ public class Obstacle : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            ParticleManager.instance.StartParticle(particleName, transform.position);
             collision.GetComponent<PlayerController>().health -= damage;
             Debug.Log(collision.GetComponent<PlayerController>().health);
             Destroy(gameObject);
