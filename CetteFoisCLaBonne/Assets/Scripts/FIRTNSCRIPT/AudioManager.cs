@@ -5,21 +5,17 @@ using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sound;
+    public AudioClip clip;
+    private AudioSource source;
 
     private void Awake()
     {
-        foreach (Sound s in sound)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-        }
+        source = GetComponent<AudioSource>();
     }
 
-    public void Play()
+    public void Switch()
     {
-        int index = 0;
-        Sound s = sound[index];
-        s.source.Play();
+        source.clip = clip;
+        source.Play();
     }
 }

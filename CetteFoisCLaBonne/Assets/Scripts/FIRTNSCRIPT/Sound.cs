@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sound
 {
     public string name;
+<<<<<<< HEAD
     
     public AudioClip clip;
 
@@ -15,5 +16,8 @@ public class Sound
 
     [HideInInspector]
     public AudioSource source;
+=======
+    public AudioClip clip;
+>>>>>>> Hector
 }
 
